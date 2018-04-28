@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1D126531FC74DF700EFF1EF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D126521FC74DF100EFF1EF /* EventKit.framework */; };
+		B1D126551FC74E0300EFF1EF /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D126541FC74DFE00EFF1EF /* EventKitUI.framework */; };
+		D910FFA01FB0D318008D1533 /* InviteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D910FF9E1FB0D318008D1533 /* InviteTableViewCell.m */; };
+		D910FFA11FB0D318008D1533 /* InviteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D910FF9F1FB0D318008D1533 /* InviteTableViewCell.xib */; };
+		D91ACDCA1F85026D00BF4483 /* DetailViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D91ACDC91F85026D00BF4483 /* DetailViewController2.m */; };
+		D92344221F2646FC001BAED6 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D92344211F2646FC001BAED6 /* EditProfileViewController.m */; };
+		D95289161F18924100E6DE67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95289151F18924100E6DE67 /* main.m */; };
+		D95289191F18924100E6DE67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95289181F18924100E6DE67 /* AppDelegate.m */; };
+		D952891F1F18924100E6DE67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D952891D1F18924100E6DE67 /* Main.storyboard */; };
+		D95289211F18924100E6DE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95289201F18924100E6DE67 /* Assets.xcassets */; };
+		D95289241F18924100E6DE67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95289221F18924100E6DE67 /* LaunchScreen.storyboard */; };
+		D95289531F19151100E6DE67 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95289521F19151100E6DE67 /* LoginViewController.m */; };
+		D95E17CE1F1A03EF005F224B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95E17CD1F1A03EF005F224B /* ProfileViewController.m */; };
+		D974B3F11F4F3CAC0012B155 /* HostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D974B3EF1F4F3CAC0012B155 /* HostTableViewCell.m */; };
+		D974B3F21F4F3CAC0012B155 /* HostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D974B3F01F4F3CAC0012B155 /* HostTableViewCell.xib */; };
+		D97DC6991F1C796000203B9B /* HostingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97DC6981F1C796000203B9B /* HostingTableViewController.m */; };
+		D97DC6A21F1C974500203B9B /* InviteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97DC6A11F1C974500203B9B /* InviteTableViewController.m */; };
+		D97DC6A51F1C9ABE00203B9B /* AllEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97DC6A41F1C9ABE00203B9B /* AllEventsTableViewController.m */; };
+		D97DC6A81F1C9ADF00203B9B /* AllEventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D97DC6A71F1C9ADF00203B9B /* AllEventsTableViewCell.m */; };
+		D97DC6AB1F1CBD9E00203B9B /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97DC6AA1F1CBD9E00203B9B /* GuideViewController.m */; };
+		D9AA9F161F50249700A8F3E4 /* buttonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AA9F141F50249700A8F3E4 /* buttonTableViewCell.m */; };
+		D9AA9F171F50249700A8F3E4 /* buttonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AA9F151F50249700A8F3E4 /* buttonTableViewCell.xib */; };
+		D9E6588E1F2799CA00C9339A /* Evenire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9E6588C1F2799CA00C9339A /* Evenire.xcdatamodeld */; };
+		D9F283051F24832100E2A0E1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F283041F24832100E2A0E1 /* DetailViewController.m */; };
+		D9F2832B1F248E7B00E2A0E1 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F2832A1F248E7B00E2A0E1 /* SettingTableViewController.m */; };
+		D9F784441F2118E9006E810F /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F784431F2118E9006E810F /* CreateViewController.m */; };
+		D9FC912F1F379ACE00B02653 /* createFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC912E1F379ACE00B02653 /* createFunc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1D126521FC74DF100EFF1EF /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B1D126541FC74DFE00EFF1EF /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		D910FF9D1FB0D318008D1533 /* InviteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteTableViewCell.h; sourceTree = "<group>"; };
+		D910FF9E1FB0D318008D1533 /* InviteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteTableViewCell.m; sourceTree = "<group>"; };
+		D910FF9F1FB0D318008D1533 /* InviteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteTableViewCell.xib; sourceTree = "<group>"; };
+		D91ACDC81F85026D00BF4483 /* DetailViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController2.h; sourceTree = "<group>"; };
+		D91ACDC91F85026D00BF4483 /* DetailViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController2.m; sourceTree = "<group>"; };
+		D92344201F2646FC001BAED6 /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		D92344211F2646FC001BAED6 /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		D95289111F18924100E6DE67 /* Evenire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evenire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95289151F18924100E6DE67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D95289171F18924100E6DE67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D95289181F18924100E6DE67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D952891E1F18924100E6DE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D95289201F18924100E6DE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D95289231F18924100E6DE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D95289251F18924100E6DE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95289511F19151100E6DE67 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D95289521F19151100E6DE67 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D95E17CC1F1A03EF005F224B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		D95E17CD1F1A03EF005F224B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		D974B3EE1F4F3CAC0012B155 /* HostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostTableViewCell.h; sourceTree = "<group>"; };
+		D974B3EF1F4F3CAC0012B155 /* HostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostTableViewCell.m; sourceTree = "<group>"; };
+		D974B3F01F4F3CAC0012B155 /* HostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostTableViewCell.xib; sourceTree = "<group>"; };
+		D97DC6971F1C796000203B9B /* HostingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostingTableViewController.h; sourceTree = "<group>"; };
+		D97DC6981F1C796000203B9B /* HostingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostingTableViewController.m; sourceTree = "<group>"; };
+		D97DC6A01F1C974500203B9B /* InviteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteTableViewController.h; sourceTree = "<group>"; };
+		D97DC6A11F1C974500203B9B /* InviteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteTableViewController.m; sourceTree = "<group>"; };
+		D97DC6A31F1C9ABE00203B9B /* AllEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllEventsTableViewController.h; sourceTree = "<group>"; };
+		D97DC6A41F1C9ABE00203B9B /* AllEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllEventsTableViewController.m; sourceTree = "<group>"; };
+		D97DC6A61F1C9ADF00203B9B /* AllEventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllEventsTableViewCell.h; sourceTree = "<group>"; };
+		D97DC6A71F1C9ADF00203B9B /* AllEventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllEventsTableViewCell.m; sourceTree = "<group>"; };
+		D97DC6A91F1CBD9E00203B9B /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		D97DC6AA1F1CBD9E00203B9B /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		D9AA9F131F50249700A8F3E4 /* buttonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonTableViewCell.h; sourceTree = "<group>"; };
+		D9AA9F141F50249700A8F3E4 /* buttonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonTableViewCell.m; sourceTree = "<group>"; };
+		D9AA9F151F50249700A8F3E4 /* buttonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buttonTableViewCell.xib; sourceTree = "<group>"; };
+		D9E6588D1F2799CA00C9339A /* Evenire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Evenire.xcdatamodel; sourceTree = "<group>"; };
+		D9F283031F24832100E2A0E1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D9F283041F24832100E2A0E1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D9F283291F248E7B00E2A0E1 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		D9F2832A1F248E7B00E2A0E1 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		D9F784421F2118E9006E810F /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		D9F784431F2118E9006E810F /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		D9FC91291F3798AE00B02653 /* HostingTable+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HostingTable+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D9FC912A1F3798AE00B02653 /* HostingTable+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HostingTable+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D9FC912D1F379ACE00B02653 /* createFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = createFunc.h; sourceTree = "<group>"; };
+		D9FC912E1F379ACE00B02653 /* createFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = createFunc.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D952890E1F18924100E6DE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D126551FC74E0300EFF1EF /* EventKitUI.framework in Frameworks */,
+				B1D126531FC74DF700EFF1EF /* EventKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1D126511FC74DF100EFF1EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1D126541FC74DFE00EFF1EF /* EventKitUI.framework */,
+				B1D126521FC74DF100EFF1EF /* EventKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95289081F18924100E6DE67 = {
+			isa = PBXGroup;
+			children = (
+				D9FC912D1F379ACE00B02653 /* createFunc.h */,
+				D9FC912E1F379ACE00B02653 /* createFunc.m */,
+				D9FC91291F3798AE00B02653 /* HostingTable+CoreDataProperties.h */,
+				D9FC912A1F3798AE00B02653 /* HostingTable+CoreDataProperties.m */,
+				D95289131F18924100E6DE67 /* Evenire */,
+				D95289121F18924100E6DE67 /* Products */,
+				B1D126511FC74DF100EFF1EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D95289121F18924100E6DE67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D95289111F18924100E6DE67 /* Evenire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D95289131F18924100E6DE67 /* Evenire */ = {
+			isa = PBXGroup;
+			children = (
+				D95289171F18924100E6DE67 /* AppDelegate.h */,
+				D95289181F18924100E6DE67 /* AppDelegate.m */,
+				D95289511F19151100E6DE67 /* LoginViewController.h */,
+				D95289521F19151100E6DE67 /* LoginViewController.m */,
+				D97DC6A91F1CBD9E00203B9B /* GuideViewController.h */,
+				D97DC6AA1F1CBD9E00203B9B /* GuideViewController.m */,
+				D95E17CC1F1A03EF005F224B /* ProfileViewController.h */,
+				D95E17CD1F1A03EF005F224B /* ProfileViewController.m */,
+				D92344201F2646FC001BAED6 /* EditProfileViewController.h */,
+				D92344211F2646FC001BAED6 /* EditProfileViewController.m */,
+				D97DC6971F1C796000203B9B /* HostingTableViewController.h */,
+				D97DC6981F1C796000203B9B /* HostingTableViewController.m */,
+				D974B3EE1F4F3CAC0012B155 /* HostTableViewCell.h */,
+				D974B3EF1F4F3CAC0012B155 /* HostTableViewCell.m */,
+				D974B3F01F4F3CAC0012B155 /* HostTableViewCell.xib */,
+				D9AA9F131F50249700A8F3E4 /* buttonTableViewCell.h */,
+				D9AA9F141F50249700A8F3E4 /* buttonTableViewCell.m */,
+				D9AA9F151F50249700A8F3E4 /* buttonTableViewCell.xib */,
+				D910FF9D1FB0D318008D1533 /* InviteTableViewCell.h */,
+				D910FF9E1FB0D318008D1533 /* InviteTableViewCell.m */,
+				D910FF9F1FB0D318008D1533 /* InviteTableViewCell.xib */,
+				D97DC6A01F1C974500203B9B /* InviteTableViewController.h */,
+				D97DC6A11F1C974500203B9B /* InviteTableViewController.m */,
+				D97DC6A31F1C9ABE00203B9B /* AllEventsTableViewController.h */,
+				D97DC6A41F1C9ABE00203B9B /* AllEventsTableViewController.m */,
+				D97DC6A61F1C9ADF00203B9B /* AllEventsTableViewCell.h */,
+				D97DC6A71F1C9ADF00203B9B /* AllEventsTableViewCell.m */,
+				D9F784421F2118E9006E810F /* CreateViewController.h */,
+				D9F784431F2118E9006E810F /* CreateViewController.m */,
+				D9F283031F24832100E2A0E1 /* DetailViewController.h */,
+				D9F283041F24832100E2A0E1 /* DetailViewController.m */,
+				D91ACDC81F85026D00BF4483 /* DetailViewController2.h */,
+				D91ACDC91F85026D00BF4483 /* DetailViewController2.m */,
+				D9F283291F248E7B00E2A0E1 /* SettingTableViewController.h */,
+				D9F2832A1F248E7B00E2A0E1 /* SettingTableViewController.m */,
+				D952891D1F18924100E6DE67 /* Main.storyboard */,
+				D9E6588C1F2799CA00C9339A /* Evenire.xcdatamodeld */,
+				D95289201F18924100E6DE67 /* Assets.xcassets */,
+				D95289221F18924100E6DE67 /* LaunchScreen.storyboard */,
+				D95289251F18924100E6DE67 /* Info.plist */,
+				D95289141F18924100E6DE67 /* Supporting Files */,
+			);
+			path = Evenire;
+			sourceTree = "<group>";
+		};
+		D95289141F18924100E6DE67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95289151F18924100E6DE67 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D95289101F18924100E6DE67 /* Evenire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95289281F18924100E6DE67 /* Build configuration list for PBXNativeTarget "Evenire" */;
+			buildPhases = (
+				D952890D1F18924100E6DE67 /* Sources */,
+				D952890E1F18924100E6DE67 /* Frameworks */,
+				D952890F1F18924100E6DE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Evenire;
+			productName = Evenire;
+			productReference = D95289111F18924100E6DE67 /* Evenire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D95289091F18924100E6DE67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = swatiwasal;
+				TargetAttributes = {
+					D95289101F18924100E6DE67 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8A2FT8A62T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D952890C1F18924100E6DE67 /* Build configuration list for PBXProject "Evenire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D95289081F18924100E6DE67;
+			productRefGroup = D95289121F18924100E6DE67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D95289101F18924100E6DE67 /* Evenire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D952890F1F18924100E6DE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D910FFA11FB0D318008D1533 /* InviteTableViewCell.xib in Resources */,
+				D9AA9F171F50249700A8F3E4 /* buttonTableViewCell.xib in Resources */,
+				D95289241F18924100E6DE67 /* LaunchScreen.storyboard in Resources */,
+				D95289211F18924100E6DE67 /* Assets.xcassets in Resources */,
+				D952891F1F18924100E6DE67 /* Main.storyboard in Resources */,
+				D974B3F21F4F3CAC0012B155 /* HostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D952890D1F18924100E6DE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95289191F18924100E6DE67 /* AppDelegate.m in Sources */,
+				D92344221F2646FC001BAED6 /* EditProfileViewController.m in Sources */,
+				D9F2832B1F248E7B00E2A0E1 /* SettingTableViewController.m in Sources */,
+				D97DC6AB1F1CBD9E00203B9B /* GuideViewController.m in Sources */,
+				D95289161F18924100E6DE67 /* main.m in Sources */,
+				D974B3F11F4F3CAC0012B155 /* HostTableViewCell.m in Sources */,
+				D9AA9F161F50249700A8F3E4 /* buttonTableViewCell.m in Sources */,
+				D97DC6A81F1C9ADF00203B9B /* AllEventsTableViewCell.m in Sources */,
+				D95289531F19151100E6DE67 /* LoginViewController.m in Sources */,
+				D97DC6A51F1C9ABE00203B9B /* AllEventsTableViewController.m in Sources */,
+				D9F784441F2118E9006E810F /* CreateViewController.m in Sources */,
+				D9E6588E1F2799CA00C9339A /* Evenire.xcdatamodeld in Sources */,
+				D9FC912F1F379ACE00B02653 /* createFunc.m in Sources */,
+				D91ACDCA1F85026D00BF4483 /* DetailViewController2.m in Sources */,
+				D9F283051F24832100E2A0E1 /* DetailViewController.m in Sources */,
+				D97DC6A21F1C974500203B9B /* InviteTableViewController.m in Sources */,
+				D97DC6991F1C796000203B9B /* HostingTableViewController.m in Sources */,
+				D910FFA01FB0D318008D1533 /* InviteTableViewCell.m in Sources */,
+				D95E17CE1F1A03EF005F224B /* ProfileViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D952891D1F18924100E6DE67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D952891E1F18924100E6DE67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D95289221F18924100E6DE67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95289231F18924100E6DE67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D95289261F18924100E6DE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D95289271F18924100E6DE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D95289291F18924100E6DE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8A2FT8A62T;
+				INFOPLIST_FILE = Evenire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swatiwasal.Evenire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D952892A1F18924100E6DE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8A2FT8A62T;
+				INFOPLIST_FILE = Evenire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swatiwasal.Evenire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D952890C1F18924100E6DE67 /* Build configuration list for PBXProject "Evenire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95289261F18924100E6DE67 /* Debug */,
+				D95289271F18924100E6DE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95289281F18924100E6DE67 /* Build configuration list for PBXNativeTarget "Evenire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95289291F18924100E6DE67 /* Debug */,
+				D952892A1F18924100E6DE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9E6588C1F2799CA00C9339A /* Evenire.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9E6588D1F2799CA00C9339A /* Evenire.xcdatamodel */,
+			);
+			currentVersion = D9E6588D1F2799CA00C9339A /* Evenire.xcdatamodel */;
+			path = Evenire.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D95289091F18924100E6DE67 /* Project object */;
+}
